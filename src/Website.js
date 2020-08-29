@@ -20,7 +20,7 @@ class Website extends Component {
               <Cards />
 
               <Categorys />
-              <h1 className="h3 mb-2 text-gray-800">All the products in the Database</h1>
+              <h1 className="h3 mb-2 text-gray-800">Todos los productos en base de datos</h1>
               <Table />
             </div>
           </div>

@@ -38,9 +38,9 @@ class Cards extends Component{
 	render(){
     return(
         <div className="row">
-			<Card tittle="Products in Data Base" number={this.state.totalProducts} styleComponent="primary" icon="clipboard-list"/>
-			<Card tittle="Amount in products" number={this.state.amountProducts} styleComponent="success" icon="dollar-sign"/>
-			<Card tittle="Users quantity" number={this.state.totalUsers} styleComponent="warning" icon="user-check"/>
+			<Card tittle="Productos en base de datos" number={this.state.totalProducts} styleComponent="primary" icon="clipboard-list"/>
+			<Card tittle="Precio total de productos" number={this.state.amountProducts} styleComponent="success" icon="dollar-sign"/>
+			<Card tittle="Cantidad de usuarios" number={this.state.totalUsers} styleComponent="warning" icon="user-check"/>
 	    </div>
     )
  }							
