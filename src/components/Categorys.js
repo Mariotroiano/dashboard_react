@@ -22,7 +22,22 @@ class Categorys extends Component {
                 
             })
         })	
-    }	
+
+        let url2 = "http://localhost:3030/api/products/lastProduct"
+        fetch(url2)
+        .then(results => results.json())
+        .then(data =>{
+            console.log(data.data.products.name)
+            this.setState({
+                name: data.data.products.name,
+                price: data.data.products.price,
+                size: data.data.products.size,
+                color: data.data.products.color
+            })
+
+        })
+    }
+    
     render() {
         return (
             <div className="row">
@@ -33,10 +48,12 @@ class Categorys extends Component {
                         </div>
                         <div className="card-body">
                             <div className="text-center">
-                                <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: "25rem" }} src="/images/product_dummy.svg" alt="imagen"/>
+                                <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: "25rem" }} src={"/images/shirt-icon.png"} alt="imagen"/>
                             </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, consequatur explicabo officia inventore libero veritatis iure voluptate reiciendis a magnam, vitae, aperiam voluptatum non corporis quae dolorem culpa exercitationem ratione?</p>
-                            <a target="_blank" rel="nofollow" href="/">View product detail</a>
+                            <p>Descripción: {this.state.name}</p>
+                            <p>Precio: $ {this.state.price}</p>
+                            <p>Talle: {this.state.size}</p>
+                            <p>Color: {this.state.color}</p>
                         </div>
                     </div>
                 </div>

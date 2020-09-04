@@ -13,3 +13,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.text-primary{
+  color: black !important;
+}
+
+.bg-gradient-primary{
+  background-color: rgb(199, 175, 43) !important;
+  background-image: none;
+}
+
+.sidebar-brand-text{
+  text-transform: none;
+  font-size: 35px;
+}
+
+#background-panel {
+  background-color: gold;
+}
